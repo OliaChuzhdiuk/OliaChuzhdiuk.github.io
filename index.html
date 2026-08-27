@@ -4,26 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Моя домашня сторінка</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Виправлено шлях на відносний (./) -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- Header Section -->
     <header>
       <h1>My personal site</h1>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="catalog.html">Catalog</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+        </ul>
       </nav>
     </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <h2>Ласкаво просимо!</h2>
+      <p>Це головна сторінка мого персонального сайту.</p>
+    </main>
+
     <!-- Footer Section -->
     <footer>
       <section>
         <div>
-          <a href="https://www.google.com" target="_blank">Our address</a>
-          <p>&copy; 2026 All rights reserved.</p>
+          <h2>About</h2>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
         </div>
+
+        <div>
+          <h2>Resources</h2>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">eBooks</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li>
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Our location on Google</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer legal -->
+      <section>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+        </ul>
       </section>
     </footer>
   </body>
