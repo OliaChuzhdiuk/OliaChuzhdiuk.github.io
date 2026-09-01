@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Галерея зображень та SVG</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <!--  ЛОКАЛЬНЕ ФОТО -->
+        <h3>1. Фото з папки</h3>
+        <img
+          src="./images/photo.jpg"
+          alt="Гірський пейзаж із лісом та туманом"
+        />
+
+        <h3>2. Фото з шириною 500px</h3>
+        <img
+          src="./images/photo.jpg"
+          alt="Гірський пейзаж із лісом та туманом"
+          width="500"
+        />
+
+        <!-- ОНЛАЙН-ЗОБРАЖЕННЯ -->
+        <h3>3. Онлайн-фото з висотою 300px</h3>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+          alt="Пейзаж з онлайн-галереї"
+          height="300"
+        />
+        <h3>4. Онлайн-фото з розміром 400px на 400px</h3>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+          alt="Пейзаж з онлайн-галереї"
+          width="400"
+          height="400"
+        />
+      </section>
+
+      <section>
+        <h2>Векторна графіка SVG</h2>
+
+        <!-- 1. Прямокутник 100x100 з координатами (20, 20, 20) -->
+        <h3>1. Прямокутник</h3>
+        <svg width="150" height="150" style="background-color: #ce8888">
+          <rect
+            x="20"
+            y="20"
+            width="100"
+            height="100"
+            fill="#4CAF50"
+            stroke="#2E7D32"
+            stroke-width="2"
+          />
+        </svg>
+
+        <!-- 2. Коло 200x200 з радіусом 60 та центром (100, 70) -->
+        <h3>2. Коло</h3>
+        <svg width="200" height="200" style="background-color: #511397">
+          <circle
+            cx="100"
+            cy="70"
+            r="60"
+            fill="#2196F3"
+            stroke="#0D47A1"
+            stroke-width="2"
+          />
+        </svg>
+
+        <!-- 3. Годинник на 3:00 -->
+        <h3>3. Годинник</h3>
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <circle
+            cx="100"
+            cy="100"
+            r="80"
+            fill="#ffffff"
+            stroke="#333333"
+            stroke-width="6"
+          />
+          <circle cx="100" cy="100" r="5" fill="#333333" />
+          <!-- Годинна стрілка -->
+          <line
+            x1="100"
+            y1="100"
+            x2="145"
+            y2="100"
+            stroke="#333333"
+            stroke-width="6"
+            stroke-linecap="round"
+          />
+          <!-- Хвилинна стрілка на 12 годин -->
+          <line
+            x1="100"
+            y1="100"
+            x2="100"
+            y2="40"
+            stroke="#e74c3c"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <p>&copy; 2026 Copyright Shopaholic Inc.</p>
+      </section>
+    </footer>
+  </body>
+</html>

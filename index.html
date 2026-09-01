@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Моя домашня сторінка</title>
-    <!-- Виправлено шлях на відносний (./) -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    <!-- Підключення main.css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+<!-- Font Awesome (для іконок) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
   <body>
     <!-- Header Section -->
@@ -17,6 +25,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="gallery.html">Gallery</li>
         </ul>
       </nav>
     </header>
@@ -31,7 +40,7 @@
     <footer>
       <section>
         <div>
-          <h2>About</h2>
+          <h2 class="heading">About</h2>
           <ul>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -42,7 +51,7 @@
         </div>
 
         <div>
-          <h2>Resources</h2>
+          <h2 class="heading" >Resources</h2>
           <ul>
             <li><a href="#">Docs</a></li>
             <li><a href="#">Blog</a></li>
@@ -52,7 +61,7 @@
         </div>
 
         <div>
-          <h2>Contact</h2>
+          <h2 class="heading">Contact</h2>
           <ul>
             <li><a href="#">Help</a></li>
             <li><a href="#">Sales</a></li>
@@ -77,6 +86,17 @@
           <li>&copy; 2024 Copyright Shopaholic Inc.</li>
         </ul>
       </section>
+
+        <section class="footer-social">
+            <ul class="list-unstyled">
+                <li><a href="https://facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com" ><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://github.com" ><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="https://www.linkedin.com" ><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://www.youtube.com" ><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="https://www.instagram.com" ><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </section>
     </footer>
   </body>
 </html>
