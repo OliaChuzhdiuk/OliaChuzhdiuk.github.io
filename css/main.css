@@ -1,9 +1,45 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  /* font-size: 1.4rem; завдання 6.2*/
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
 h1,
 h2,
 h3 {
+  font-weight: 700;
   color: gray;
 }
 
+h1 {
+  /* font-size: 2.4rem; завдання 6.2 */
+  font-size: 1.45rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+/* Завдання 3 */
+div {
+  font-size: 1.6em;
+}
+
+div span {
+  font-size: 1.6em;
+}
+/* Завдання 4 */
+strong {
+  font-size: 1.6em;
+}
+
+strong strong {
+  font-size: 1em;
+}
 #main {
   color: #e60202;
 }
@@ -15,8 +51,44 @@ h3 {
 .heading {
   color: green;
 }
+
+/* Завдання 5 */
 .list-unstyled {
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+
+/* Завдання 7 */
+.body {
+  background: linear-gradient(
+    to right,
+    #dff7df 5%,
+    #b8e6b8 17%,
+    #7dcc7d 40%,
+    #3b963b 85%,
+    #155c15 95%
+  );
+}
+.negative {
+  background: linear-gradient(
+    to left,
+    #dff6ff -50%,
+    #b8e5f5 -10%,
+    #7fc8e8 0%,
+    #347fa8 100%,
+    #104866 150%
+  );
+}
+.percents {
+  background: linear-gradient(
+    to bottom,
+    #e2f8e2 2em,
+    #c0e9c0 4em,
+    #91d691 8em,
+    #65bd65 16em,
+    #479f47 32em,
+    #2d7d2d 64em,
+    #145414 128em
+  );
 }

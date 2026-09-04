@@ -7,15 +7,29 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
     <!-- Normalize.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    
-    <!-- Підключення main.css -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-<!-- Font Awesome (для іконок) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Підключення main.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Font Awesome (для іконок) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
   </head>
-  <body>
+  <body class="body">
     <!-- Header Section -->
     <header>
       <h1>My personal site</h1>
@@ -25,7 +39,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="catalog.html">Catalog</a></li>
-          <li><a href="gallery.html">Gallery</li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </header>
@@ -51,7 +65,7 @@
         </div>
 
         <div>
-          <h2 class="heading" >Resources</h2>
+          <h2 class="heading">Resources</h2>
           <ul>
             <li><a href="#">Docs</a></li>
             <li><a href="#">Blog</a></li>
@@ -78,25 +92,84 @@
         </div>
       </section>
 
+      <!-- Task: Cascading Style Sheets -->
+      <div>
+        <span>Outer <span>inner</span> outer</span>
+      </div>
+
+      <div>
+        <strong>Outer <strong>inner</strong> outer</strong>
+      </div>
+
+      <h1>Gradient Text Glow</h1>
+
+      <div class="percents">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum
+        magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque
+        facere necessitatibus fugiat rerum facilis reprehenderit numquam
+        dignissimos itaque!
+      </div>
+
+      <div class="negative">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum
+        magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque
+        facere necessitatibus fugiat rerum facilis reprehenderit numquam
+        dignissimos itaque!
+      </div>
+
+      <div class="radial">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum
+        magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque
+        facere necessitatibus fugiat rerum facilis reprehenderit numquam
+        dignissimos itaque!
+      </div>
+
+      <!-- Task: Cascading Style Sheets -->
+
       <!-- Footer legal -->
+  <footer>
       <section>
-        <ul>
+        <ul class="list-unstyled">
           <li><a href="#">Terms &amp; Conditions</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li>&copy; 2024 Copyright Shopaholic Inc.</li>
         </ul>
       </section>
 
-        <section class="footer-social">
-            <ul class="list-unstyled">
-                <li><a href="https://facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a href="https://twitter.com" ><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://github.com" ><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a href="https://www.linkedin.com" ><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://www.youtube.com" ><i class="fab fa-youtube"></i> YouTube</a></li>
-                <li><a href="https://www.instagram.com" ><i class="fab fa-instagram"></i> Instagram</a></li>
-            </ul>
-        </section>
+      <section class="footer-social">
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://facebook.com"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com"
+              ><i class="fab fa-youtube"></i> YouTube</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </li>
+        </ul>
+      </section>
     </footer>
   </body>
 </html>
