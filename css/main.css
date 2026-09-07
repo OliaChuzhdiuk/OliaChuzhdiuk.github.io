@@ -26,20 +26,18 @@ h2 {
 
 /* Завдання 3 */
 div {
-  font-size: 1.6em;
-}
-
-div span {
-  font-size: 1.6em;
-}
-/* Завдання 4 */
-strong {
-  font-size: 1.6em;
-}
-
-strong strong {
   font-size: 1em;
 }
+
+span {
+  font-size: 1.6em;
+}
+
+/* Завдання 4 */
+strong {
+  font-size: 1.6rem;
+}
+
 #main {
   color: #e60202;
 }
