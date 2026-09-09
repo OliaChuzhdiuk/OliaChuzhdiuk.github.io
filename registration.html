@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="body">
+    <form class="registration-form">
+      <h1>Реєстрація</h1>
+
+      <!-- Прізвище -->
+      <div class="form-group">
+        <label for="surname"><i class="fa-solid fa-user"></i> Прізвище</label>
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          placeholder="Введіть прізвище"
+          required
+        />
+        <small class="error-message">Будь ласка, введіть прізвище</small>
+      </div>
+
+      <!-- Ім'я -->
+      <div class="form-group">
+        <label for="name"><i class="fa-solid fa-user"></i> Ім'я</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Введіть ім'я"
+          minlength="2"
+          required
+        />
+        <small class="error-message"
+          >Ім'я має містити щонайменше 2 символи</small
+        >
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email"
+          ><i class="fa-solid fa-envelope"></i> Електронна адреса</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <small class="error-message">Некоректний формат email</small>
+      </div>
+
+      <!-- Пароль -->
+      <div class="form-group">
+        <label for="password"><i class="fa-solid fa-lock"></i> Пароль</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Введіть пароль"
+          minlength="8"
+          required
+        />
+        <small class="error-message">Пароль має бути не менше 8 символів</small>
+      </div>
+
+      <!-- Підтвердження пароля -->
+      <div class="form-group">
+        <label for="confirm-password"
+          ><i class="fa-solid fa-lock"></i> Підтвердження пароля</label
+        >
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="Повторіть пароль"
+          minlength="8"
+          required
+        />
+        <small class="error-message">Заповніть це поле</small>
+      </div>
+
+      <!-- Телефон -->
+      <div class="form-group">
+        <label for="phone"
+          ><i class="fa-solid fa-phone"></i> Номер телефона</label
+        >
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+380 XX XXX XX XX"
+          required
+        />
+        <small class="error-message">Заповніть номер телефону</small>
+      </div>
+
+      <!-- Стать -->
+      <fieldset class="gender">
+        <legend><i class="fa-solid fa-venus-mars"></i> Стать</legend>
+        <label
+          ><input type="radio" name="gender" value="female" required />
+          Жінка</label
+        >
+        <label
+          ><input type="radio" name="gender" value="male" required />
+          Чоловік</label
+        >
+        <small class="error-message">Оберіть стать</small>
+      </fieldset>
+
+      <button type="submit">
+        <i class="fa-solid fa-user-plus"></i>
+        Зареєструватися
+      </button>
+    </form>
+  </body>
+</html>
