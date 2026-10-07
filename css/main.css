@@ -90,3 +90,35 @@ strong {
     #145414 128em
   );
 }
+
+/* Task list */
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.task-list li {
+  flex: 0 0 calc((100% - 40px) / 5);
+  box-sizing: border-box;
+
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: hsl(124, 87%, 49%);
+  cursor: pointer;
+}
+
+.task-list li a {
+  display: block;
+  margin-top: 15px;
+
+  text-decoration: none;
+}
