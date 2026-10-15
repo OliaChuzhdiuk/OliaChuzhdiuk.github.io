@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f0;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.registration-form {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.registration-form h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #006400;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: auto;
+  padding: 5px 10px;
+  background: transparent;
+  color: #555;
+  font-size: 28px;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close-button:hover {
+  color: #d9534f;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+.form-group label i {
+  margin-right: 7px;
+  color: #2e8b57;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #2e8b57;
+  box-shadow: 0 0 0 2px rgba(46, 139, 87, 0.2);
+}
+
+.error-message {
+  display: none;
+  margin-top: 5px;
+  color: #d9534f;
+  font-size: 0.85rem;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.remember input {
+  accent-color: #006400;
+}
+
+.remember label {
+  cursor: pointer;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registration-form .form-buttons button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button {
+  background-color: #006400;
+}
+
+.registration-form .form-buttons .submit-button:hover {
+  background-color: #2e8b57;
+}
+
+.cancel-button {
+  background-color: #777;
+}
+
+.registration-form .form-buttons .cancel-button:hover {
+  background-color: #555;
+}
+
+.form-buttons button i {
+  margin-right: 7px;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+.error-message.visible {
+  display: block;
+}
+
+.form-group input.invalid {
+  border-color: #d9534f;
+}
+
+.form-group input.invalid:focus {
+  box-shadow: 0 0 0 2px rgba(217, 83, 79, 0.2);
+}

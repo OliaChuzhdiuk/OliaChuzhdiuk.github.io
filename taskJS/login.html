@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <title>Вхід на сайт</title>
+  </head>
+
+  <body>
+    <div class="modal-overlay" id="login-modal">
+      <form class="registration-form" id="login-form">
+        <button
+          type="button"
+          class="close-button"
+          id="close-modal"
+          aria-label="Закрити вікно"
+        >
+          &times;
+        </button>
+
+        <h1>Вхід</h1>
+
+        <!-- Логін -->
+        <div class="form-group">
+          <label for="login">
+            <i class="fa-solid fa-user"></i>
+            Логін
+          </label>
+
+          <input
+            type="text"
+            id="login"
+            name="login"
+            placeholder="Введіть логін"
+            required
+          />
+        </div>
+
+        <!-- Пароль -->
+        <div class="form-group">
+          <label for="password">
+            <i class="fa-solid fa-lock"></i>
+            Пароль
+          </label>
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Введіть пароль"
+            minlength="8"
+            required
+          />
+        </div>
+
+        <!-- Запам'ятати мене -->
+        <div class="remember">
+          <input type="checkbox" id="remember-me" name="remember" />
+
+          <label for="remember-me">Запам'ятати мене</label>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="form-buttons">
+          <button type="submit" class="submit-button">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Увійти
+          </button>
+
+          <button type="button" class="cancel-button" id="cancel-login">
+            Відмінити
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
