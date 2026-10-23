@@ -122,3 +122,14 @@ strong {
 
   text-decoration: none;
 }
+
+.title-task {
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  color: #f6faf5;
+  font-size: 2rem;
+  background-color: #08f036;
+  padding: 10px;
+  border-radius: 5px;
+}
